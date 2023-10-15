@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.bird {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(red 50%, rgba(255, 255, 255, 0) 50%);
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-fill-mode: inherit;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+    z-index: 2;
+}
+
+.bird2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 44.8%;
+    left: 47.4%;
+    transform: rotate(90deg);
+    background: linear-gradient(rgba(255, 0, 0, 0) 50%, white 50%);
+    border-radius: 50%;
+    animation-name: anim2;
+    animation-duration: 5s;
+    animation-fill-mode: inherit;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 3;
+}
+
+.bird3 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 47.4%;
+    transform: rotate(-90deg);
+    border-radius: 87.5px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.315);
+    animation-name: anim3;
+    animation-duration: 5s;
+    animation-fill-mode: inherit;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 4;
+}
+
+.bird4 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 44.8%;
+    left: 50%;
+    transform: rotate(90deg);
+    border-radius: 87.5px 0 0 0;
+    background-color: #f7ce42;
+    z-index: 5;
+    animation-name: anim5;
+    animation-duration: 5s;
+    animation-fill-mode: inherit;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.bird5 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(-100%, -100%);
+    z-index: 4;
+    animation-name: anim4;
+    animation-duration: 5s;
+    animation-fill-mode: inherit;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.bird6 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: orange;
+    border-radius: 87.5px 0 0 0;
+    transform: rotate(180deg);
+    animation-name: anim6;
+    animation-duration: 5s;
+    animation-fill-mode: inherit;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes anim {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    15% {
+        transform: rotate(-90deg);
+    }
+
+    35% {
+        transform: rotate(90deg);
+    }
+
+    65% {
+        transform: rotate(90deg);
+    }
+
+    85% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    15% {
+        transform: rotate(90deg);
+    }
+
+    35% {
+        transform: rotate(-90deg);
+    }
+
+    65% {
+        transform: rotate(-90deg);
+    }
+
+    85% {
+        transform: rotate(-270deg);
+    }
+
+    100% {
+        transform: rotate(-270deg);
+    }
+}
+
+@keyframes anim3 {
+    0% {
+        top: 50%;
+        left: 47.4%;
+        transform: rotate(-90deg);
+    }
+
+    15% {
+        top: 50%;
+        left: 47.4%;
+        transform: rotate(-90deg);
+    }
+
+    25% {
+        top: 50.9%;
+    }
+
+    35% {
+        top: 50%;
+        left: 50%;
+        transform: rotate(-180deg);
+    }
+
+    65% {
+        top: 50%;
+        left: 50%;
+        transform: rotate(-180deg);
+    }
+
+    75% {
+        top: 50.9%;
+
+    }
+
+    85% {
+        top: 50%;
+        left: 47.4%;
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        top: 50%;
+        left: 47.4%;
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes anim4 {
+    0% {
+        top: 50%;
+        left: 50%;
+    }
+
+    15% {
+        top: 50%;
+        left: 50%;
+    }
+
+    35% {
+        top: 50%;
+        left: 51.3%;
+    }
+
+    65% {
+        top: 50%;
+        left: 51.3%;
+    }
+
+    85% {
+        top: 50%;
+        left: 50%;
+    }
+
+    100% {
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@keyframes anim5 {
+    0% {
+        transform: rotate(90deg);
+        top: 44.8%;
+        left: 50%;
+    }
+
+    15% {
+        transform: rotate(90deg);
+        top: 44.8%;
+        left: 50%;
+    }
+
+    25% {
+        top: 43.9%;
+    }
+
+    35% {
+        transform: rotate(0deg);
+        top: 44.8%;
+        left: 47.4%;
+    }
+
+    65% {
+        transform: rotate(0deg);
+        top: 44.8%;
+        left: 47.4%;
+    }
+
+    75% {
+        top: 43.9%;
+    }
+
+    85% {
+        transform: rotate(90deg);
+        top: 44.8%;
+        left: 50%;
+    }
+
+    100% {
+        transform: rotate(90deg);
+        top: 44.8%;
+        left: 50%;
+    }
+}
+
+@keyframes anim6 {
+    0% {
+        transform: rotate(180deg);
+        top: 50%;
+        left: 50%;
+    }
+
+    15% {
+        transform: rotate(180deg);
+        top: 50%;
+        left: 50%;
+    }
+
+    25% {
+        top: 50.58%;
+    }
+
+    35% {
+        transform: rotate(270deg);
+        top: 50%;
+        left: 48.7%;
+    }
+
+    65% {
+        transform: rotate(270deg);
+        top: 50%;
+        left: 48.7%;
+    }
+
+    75% {
+        top: 50.58%;
+    }
+
+    85% {
+        transform: rotate(180deg);
+        top: 50%;
+        left: 50%;
+    }
+
+    100% {
+        transform: rotate(180deg);
+        top: 50%;
+        left: 50%;
+    }
+}
